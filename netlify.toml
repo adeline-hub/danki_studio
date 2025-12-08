@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build:example"
+  command = "npm install && npm run build:example"
   publish = "exampleSite/public"
 
 [build.environment]
