@@ -14,7 +14,7 @@ function determinePaths() {
     return {
       hugoTomlPath: exampleSiteHugoToml,
       themePath: path.join(__dirname, "../exampleSite/data/theme.json"),
-      outputPath: path.join(__dirname, "../assets/css/generated-theme.css"),
+      outputPath: path.join(__dirname, "../exampleSite/static/css/generated-theme.css"),
       isThemeSetup: true,
     };
   } else if (fs.existsSync(rootHugoToml)) {

@@ -1,24 +1,11 @@
 <!-- DNS preconnect -->
 <meta http-equiv="x-dns-prefetch-control" content="on" />
-<link rel="preconnect" href="https://use.fontawesome.com" crossorigin />
-<link rel="preconnect" href="//cdnjs.cloudflare.com" />
-<link rel="preconnect" href="//www.googletagmanager.com" />
-<link rel="preconnect" href="//www.google-analytics.com" />
-<link rel="dns-prefetch" href="https://use.fontawesome.com" />
-<link rel="dns-prefetch" href="//ajax.googleapis.com" />
-<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
-<link rel="dns-prefetch" href="//www.googletagmanager.com" />
-<link rel="dns-prefetch" href="//www.google-analytics.com" />
-<link rel="dns-prefetch" href="//fonts.googleapis.com" />
-<link rel="dns-prefetch" href="//connect.facebook.net" />
-<link rel="dns-prefetch" href="//platform.linkedin.com" />
-<link rel="dns-prefetch" href="//platform.twitter.com" />
-
-<!-- google fonts -->
-{{ $pf:= site.Data.theme.fonts.font_family.primary }}
-{{ $sf:= site.Data.theme.fonts.font_family.secondary }}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<!-- Google Fonts dynamiques -->
+{{ $pf := site.Data.theme.fonts.font_family.primary }}
+{{ $sf := site.Data.theme.fonts.font_family.secondary }}
 <script>
   (function () {
     const googleFont = document.createElement("link");
@@ -29,7 +16,7 @@
   })();
 </script>
 
-<!-- main styles -->
+<!-- CSS principal -->
 {{ $styles := slice }}
 {{ $stylesLazy := slice }}
 
@@ -50,28 +37,33 @@
   {{ end }}
 {{ end }}
 
+<!-- main.css compilé avec Tailwind -->
 {{ $mainCSS := resources.Get "css/main.css" }}
 {{ $tailwindOpts := dict "inlineImports" true }}
 {{ $tailwindCSS := $mainCSS | css.TailwindCSS $tailwindOpts }}
-
 {{ $styles = $styles | append $tailwindCSS }}
-{{ $styles = $styles | resources.Concat "css/style.css" }}
 
+<!-- generated-theme.css injecté -->
+{{ $themeCSS := resources.Get "css/generated-theme.css" }}
+{{ $styles = $styles | append $themeCSS }}
+
+<!-- Concaténation finale -->
+{{ $styles = $styles | resources.Concat "css/style.css" }}
 {{ $stylesLazy = $stylesLazy | resources.Concat "css/style-lazy.css" }}
 
+<!-- Production fingerprint -->
 {{ if hugo.IsProduction }}
   {{ $styles = $styles | fingerprint }}
   {{ $stylesLazy = $stylesLazy | minify | fingerprint }}
 {{ end }}
 
-
-<!-- link main style -->
+<!-- Lien CSS principal -->
 <link
   href="{{ $styles.RelPermalink }}"
   integrity="{{ $styles.Data.Integrity }}"
   rel="stylesheet" />
 
-<!-- link lazy style -->
+<!-- Lien CSS lazy -->
 <link
   rel="stylesheet"
   href="{{ $stylesLazy.RelPermalink }}"
