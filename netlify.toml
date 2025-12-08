@@ -1,8 +1,8 @@
 
 [build]
-  command = "npm run build"
-  publish = "public"
-  base = "."
+  command = "npm run build:example"
+  publish = "exampleSite/public"
+  environment = { HUGO_VERSION = "0.116.3" }
 
 [context.production.environment]
   HUGO_VERSION = "0.153.0"
