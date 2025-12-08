@@ -1,7 +1,15 @@
-[build]
-publish = "public"
-command = "yarn project-setup; yarn build"
 
-[build.environment]
-HUGO_VERSION = "0.151.0"
-GO_VERSION = "1.25.1"
+[build]
+  command = "npm run build"
+  publish = "public"
+  base = "."
+
+[context.production.environment]
+  HUGO_VERSION = "0.153.0"
+  HUGO_ENV = "production"
+  NODE_VERSION = "20"
+
+[dev]
+  command = "npm run dev"
+  port = 8888
+
