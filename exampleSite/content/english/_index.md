@@ -60,13 +60,14 @@ cta:
     label: "Start a conversation"
     link: "https://dankistudio.netlify.app/contact"
 ---
+<!-- Paste the banner content + gallery here, AFTER the YAML front matter -->
 
-<!-- MARKDOWN CONTENT -->
+<!-- Show the banner content first -->
+<p class="banner-content">
+.danki studio builds lean, agile, and actionable data solutions for modern businesses.
+</p>
 
-<hr>
-
-### Gallery
-
+<!-- Gallery immediately after banner content -->
 {{< gallery
   dir="images/gallery"
   height="400"
@@ -77,3 +78,5 @@ cta:
 >}}
 
 <hr>
+
+<!-- You can continue with additional Markdown content, sections, etc. -->
