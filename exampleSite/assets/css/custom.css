@@ -1,1 +1,49 @@
+/* ===============================
+   Navbar Hugoplate - Fix alignments
+   =============================== */
+
+/* Force le menu desktop horizontal et centré */
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  gap: 1.5rem; /* espace entre les items */
+  width: auto !important;
+}
+
+/* Desktop dropdown hover */
+.nav-dropdown-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  z-index: 50;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.nav-dropdown:hover > .nav-dropdown-list,
+.nav-dropdown.group:hover > .nav-dropdown-list {
+  display: block !important;
+}
+
+/* Mobile menu hidden by default, visible on toggle */
+#mobile-menu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Mobile menu items */
+#mobile-menu li {
+  border-bottom: 1px solid #e5e7eb; /* Tailwind gray-200 */
+}
+
+/* Active link styling */
+.nav-link.active,
+.nav-dropdown-link.active {
+  font-weight: 600;
+  color: #4f46e5; /* Tailwin*
 /* Add your own custom styles here */
