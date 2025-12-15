@@ -75,3 +75,18 @@
   align-items: center;
   gap: 0.5rem;
 }
+
+/* Minimal navbar style (inspired by Visual Cinnamon) */
+.header a {
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: .5px;
+}
+
+.header ul li a:hover {
+  color: #6366f1; /* Indigo‑600 */
+}
+
+#mobile-nav {
+  border-top: 1px solid #e5e7eb; /* Tailwind gray‑200 */
+}
