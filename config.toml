@@ -1,0 +1,92 @@
+# ===============================
+# Configuration Hugoplate Multi-langues
+# ===============================
+baseURL = "/"
+languageCode = "fr-FR"
+title = "Mon Site"
+theme = "hugoplate"
+enableRobotsTXT = true
+paginate = 10
+
+# ===============================
+# Paramètres du site
+# ===============================
+[params]
+  navbar_fixed = true
+
+  # Bouton de navigation (CTA)
+  [params.navigation_button]
+  enable = true
+  label = "S'inscrire"
+  link = "/inscription/"
+
+  # Recherche
+  [params.search]
+  enable = true
+
+  # Theme switcher (light/dark)
+  theme_switcher = true
+  primary_color = "#4f46e5"
+  darkmode = true
+
+# ===============================
+# Menu principal
+# ===============================
+[menu]
+  [[menu.main]]
+    name = "Accueil"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+  [[menu.main]]
+    name = "À propos"
+    url = "/a-propos/"
+    weight = 3
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+# ===============================
+# Multilingue
+# ===============================
+[languages]
+
+  [languages.fr]
+    languageName = "Français"
+    weight = 1
+    contentDir = "content/fr"
+    title = "Mon Site"
+    menu = "main"
+
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    contentDir = "content/en"
+    title = "My Site"
+    menu = "main"
+
+  [languages.it]
+    languageName = "Italiano"
+    weight = 3
+    contentDir = "content/it"
+    title = "Il Mio Sito"
+    menu = "main"
+
+  [languages.de]
+    languageName = "Deutsch"
+    weight = 4
+    contentDir = "content/de"
+    title = "Meine Webseite"
+    menu = "main"
+
+  [languages.ng]
+    languageName = "Ngambay"
+    weight = 5
+    contentDir = "content/ng"
+    title = "Sang Site"
+    menu = "main"
+
