@@ -28,11 +28,15 @@
     <!-- Right controls -->
     <div class="flex items-center gap-4">
 
-      <!-- Language switcher -->
-      {{ partial "components/language-switcher" (dict "Context" . "Class" "text-sm") }}
+      <!-- Language switcher visible -->
+      <div class="lg:flex hidden">
+        {{ partial "components/language-switcher" (dict "Context" . "Class" "text-sm px-2 py-1 border rounded") }}
+      </div>
 
       <!-- Theme switcher -->
-      {{ partial "components/theme-switcher" (dict "Class" "text-sm") }}
+      <div class="lg:flex hidden">
+        {{ partial "components/theme-switcher" (dict "Class" "text-sm px-2 py-1") }}
+      </div>
 
       <!-- Mobile menu icon -->
       <button id="mobile-nav-toggle" class="lg:hidden text-xl focus:outline-none">
@@ -43,15 +47,26 @@
   </nav>
 
   <!-- Mobile Menu -->
-  <ul id="mobile-nav" class="lg:hidden hidden flex-col space-y-2 bg-white dark:bg-darkmode-body py-4 px-6 text-sm">
-    {{ range site.Menus.main }}
-      <li>
-        <a href="{{ .URL | relLangURL }}" class="block hover:text-indigo-600 transition-colors">
-          {{ .Name }}
-        </a>
-      </li>
-    {{ end }}
-  </ul>
+  <div id="mobile-nav" class="lg:hidden hidden bg-white dark:bg-darkmode-body border-t border-gray-200">
+    <ul class="flex flex-col space-y-2 py-4 px-6 text-sm">
+      {{ range site.Menus.main }}
+        <li>
+          <a href="{{ .URL | relLangURL }}" class="block hover:text-indigo-600 transition-colors">
+            {{ .Name }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+    <!-- Mobile language switcher -->
+    <div class="px-6 pb-4">
+      {{ partial "components/language-switcher" (dict "Context" . "Class" "w-full block text-sm px-2 py-1 border rounded") }}
+    </div>
+    <!-- Optional mobile theme switcher -->
+    <div class="px-6 pb-4">
+      {{ partial "components/theme-switcher" (dict "Class" "w-full block text-sm px-2 py-1 border rounded") }}
+    </div>
+  </div>
+
 </header>
 
 <script>
@@ -61,3 +76,4 @@
     mobileNav.classList.toggle('hidden');
   });
 </script>
+
