@@ -1,24 +1,11 @@
 ---
+title: "Danki Studio"
+
 # Banner
 banner:
   title: "Maximum Insight. Minimalist Data Architecture"
   content: ".danki studio builds lean, agile, and actionable data solutions for modern businesses."
-  <hr>
-
-### Gallery
-
-{{< gallery
-  dir="images/gallery"
-  height="400"
-  width="400"
-  webp="true"
-  command="Fit"
-  zoomable="true"
->}}
-
-<hr>
-
-
+  image: "/images/banner.png"
   button:
     enable: true
     label: "Get Started For Free"
@@ -61,5 +48,32 @@ features:
       enable: false
       label: ""
       link: ""
+
+# Call-to-Action
+cta:
+  enable: true
+  title: "Ready to turn your data into insight?"
+  description: "Let’s design lean data architectures and analytics that make complex systems readable, actionable, and useful for decision-making."
+  image: "/images/call-to-action.png"
+  button:
+    enable: true
+    label: "Start a conversation"
+    link: "https://dankistudio.netlify.app/contact"
 ---
 
+<!-- MARKDOWN CONTENT -->
+
+<hr>
+
+### Gallery
+
+{{< gallery
+  dir="images/gallery"
+  height="400"
+  width="400"
+  webp="true"
+  command="Fit"
+  zoomable="true"
+>}}
+
+<hr>
