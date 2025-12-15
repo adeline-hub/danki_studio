@@ -3,9 +3,7 @@
 banner:
   title: "Maximum Insight. Minimalist Data Architecture"
   content: ".danki studio builds lean, agile, and actionable data solutions for modern businesses."
-### Gallery
-
-{{< gallery dir="images/gallery" class="" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
+  image: "/images/banner.png"
   button:
     enable: true
     label: "Get Started For Free"
