@@ -7,26 +7,26 @@
       </a>
     </div>
 
-    <ul class="hidden lg:flex items-center gap-8 text-sm font-medium">
-      {{ $currentPage := . }}
-      {{ range site.Menus.main }}
-        {{ $menuURL := .URL | absLangURL }}
-        {{ $pageURL := $currentPage.Permalink | absLangURL }}
-        {{ $active := eq $menuURL $pageURL }}
-        <li>
-          <a
-            href="{{ .URL | relLangURL }}"
-            class="hover:text-indigo-600 transition-colors {{ if $active }}text-indigo-600{{ end }}">
-            {{ .Name }}
-          </a>
-        </li>
-      {{ end }}
-    </ul>
-
-    {{/* Tous les éléments non désirés (boutons 'Get a quote', icônes de recherche, etc.) ont été retirés de ce bloc. */}}
+    <div class="hidden lg:flex flex-grow justify-center">
+      <ul class="flex items-center gap-8 text-sm font-medium">
+        {{ $currentPage := . }}
+        {{ range site.Menus.main }}
+          {{ $menuURL := .URL | absLangURL }}
+          {{ $pageURL := $currentPage.Permalink | absLangURL }}
+          {{ $active := eq $menuURL $pageURL }}
+          <li>
+            <a
+              href="{{ .URL | relLangURL }}"
+              class="hover:text-indigo-600 transition-colors {{ if $active }}text-indigo-600{{ end }}">
+              {{ .Name }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+    
     <div class="flex items-center gap-4">
       
-      {{/* Classes ajustées pour garantir la visibilité mobile/desktop */}}
       <div class="flex items-center gap-2 border border-gray-300 rounded px-2 py-1 text-sm">
         <a href="/en/" class="hover:text-indigo-600 {{ if eq .Lang "en" }}font-semibold text-indigo-600{{ end }}">EN</a>
         <span>|</span>
