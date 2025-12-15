@@ -1,31 +1,32 @@
 ---
 enable: true
-title: "What Users Are Saying About Hugoplate"
-description: "Don't just take our word for it - hear from some of our satisfied users!  Check out some of our testimonials below to see what others are saying about Hugoplate."
+title: "Selected Projects"
+description: "A selection of professional and personal projects exploring data architecture, analytics, and insight across finance, living systems, and historical economies."
 
-# Testimonials
+# Projects
 testimonials:
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
-    avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+  - name: "Janus Mediterranean"
+    designation: "Investment Analytics"
+    avatar: "/images/portfolio/janus/cover.png"
+    content: "Design and development of a lean analytics framework for Mediterranean investment activities, combining financial performance, geographic exposure, and impact indicators to support strategic decision-making."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
-    avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+  - name: "Cernunnos"
+    designation: "PropTech Investment Intelligence"
+    avatar: "/images/portfolio/cernunnos/cover.png"
+    content: "Portfolio-level analytics for a PropTech investment group, focusing on asset allocation, geographic distribution, performance trends, and risk concentration through clear, decision-oriented visualizations."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
-    avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+  - name: "Citrus"
+    designation: "Botany, Diversity & Data"
+    avatar: "/images/portfolio/citrus/cover.png"
+    content: "A personal research project exploring citrus diversity through botanical classification, geographic origins, hybridization, and data visualization, bridging biological systems and analytical structure."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
-    avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+  - name: "Monastic Mapping"
+    designation: "Economic Networks of the Middle Ages"
+    avatar: "/images/portfolio/monastic/cover.png"
+    content: "Historical data analysis of monastic institutions as economic actors, using spatial and network analysis to reveal land management, production, and regional influence during the Middle Ages."
 
 # don't create a separate page
 build:
   render: "never"
 ---
+
