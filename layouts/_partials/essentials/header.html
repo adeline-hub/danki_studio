@@ -23,9 +23,10 @@
       {{ end }}
     </ul>
 
+    {{/* Tous les éléments non désirés (boutons 'Get a quote', icônes de recherche, etc.) ont été retirés de ce bloc. */}}
     <div class="flex items-center gap-4">
-
-      {{/* NOTE: The 'flex' class ensures it displays on mobile, and the previous 'hidden' class is removed. */}}
+      
+      {{/* Classes ajustées pour garantir la visibilité mobile/desktop */}}
       <div class="flex items-center gap-2 border border-gray-300 rounded px-2 py-1 text-sm">
         <a href="/en/" class="hover:text-indigo-600 {{ if eq .Lang "en" }}font-semibold text-indigo-600{{ end }}">EN</a>
         <span>|</span>
@@ -60,8 +61,6 @@
         </li>
       {{ end }}
     </ul>
-
-    {{/* Removed the Mobile Language Switcher block here because the universal one above is now always visible. */}}
 
     <div class="px-6 pb-4 border-t border-gray-200">
       {{ partial "components/theme-switcher" (dict "Class" "w-full block text-sm px-2 py-1 border rounded") }}
