@@ -45,5 +45,33 @@
 .nav-link.active,
 .nav-dropdown-link.active {
   font-weight: 600;
-  color: #4f46e5; /* Tailwin*
-/* Add your own custom styles here */
+  color: #4f46e5; /* Tailwind indigo-600 */
+}
+
+/* Buttons */
+.btn-outline-primary {
+  border: 1px solid #4f46e5;
+  color: #4f46e5;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.btn-outline-primary:hover {
+  background-color: #4f46e5;
+  color: white;
+}
+
+/* Force logo left, menu center, CTA right */
+.navbar > div.order-0 {
+  flex-shrink: 0;
+}
+.navbar > ul.navbar-nav {
+  flex: 1 1 auto;
+}
+.navbar > div.order-2 {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
