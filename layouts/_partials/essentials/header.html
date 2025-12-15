@@ -2,29 +2,14 @@
   <nav class="navbar container mx-auto flex items-center justify-between px-4 py-3">
 
     <!-- Logo -->
-    <div class="order-0">
+    <div class="order-0 flex-shrink-0">
       <a class="navbar-brand block" href="{{ site.Home.RelPermalink }}">
         {{ partial "logo" }}
       </a>
     </div>
 
-    <!-- Mobile menu toggler -->
-    <div class="order-3 lg:hidden flex items-center">
-      <input id="nav-toggle" type="checkbox" class="hidden" />
-      <label for="nav-toggle" class="cursor-pointer flex items-center text-text-dark dark:text-white">
-        <svg id="show-button" class="h-6 w-6 fill-current block" viewBox="0 0 20 20">
-          <title>Menu Open</title>
-          <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V15z"></path>
-        </svg>
-        <svg id="hide-button" class="h-6 w-6 fill-current hidden" viewBox="0 0 20 20">
-          <title>Menu Close</title>
-          <polygon points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2" transform="rotate(45 10 10)"></polygon>
-        </svg>
-      </label>
-    </div>
-
-    <!-- Main menu -->
-    <ul id="nav-menu" class="hidden lg:flex items-center gap-6 w-full lg:w-auto lg:space-x-6">
+    <!-- Desktop menu -->
+    <ul id="nav-menu" class="hidden lg:flex items-center gap-6 flex-1 justify-center">
       {{ $currentPage := . }}
       {{ range site.Menus.main }}
         {{ $menuURL := .URL | absLangURL }}
@@ -32,25 +17,18 @@
         {{ $active := eq $menuURL $pageURL }}
         {{ if .HasChildren }}
           <li class="nav-item nav-dropdown group relative">
-            <input type="checkbox" id="submenu-{{ .Name | urlize }}" class="peer hidden lg:hidden" />
-            <label for="submenu-{{ .Name | urlize }}" class="nav-link inline-flex items-center cursor-pointer {{ if $active }}active{{ end }}">
+            <label class="nav-link inline-flex items-center cursor-pointer {{ if $active }}active{{ end }}">
               {{ .Name }}
               <svg class="h-4 w-4 fill-current ml-1" viewBox="0 0 20 20">
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
               </svg>
             </label>
-            <ul class="nav-dropdown-list hidden peer-checked:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 bg-white dark:bg-darkmode-body shadow-md mt-2 rounded">
+            <ul class="nav-dropdown-list absolute left-0 mt-2 hidden group-hover:block bg-white dark:bg-darkmode-body shadow-md rounded z-50">
               {{ range .Children }}
                 {{ $childURL := .URL | absLangURL }}
                 {{ $active := eq $childURL $pageURL }}
                 <li class="nav-dropdown-item">
-                  <a class="nav-dropdown-link {{ if $active }}active{{ end }}"
-                     href="{{- if findRE `^#` .URL -}}
-                            {{- if not $.IsHome -}}{{- site.Home.RelPermalink -}}{{- end -}}
-                            {{- .URL -}}
-                          {{- else -}}
-                            {{- .URL | relLangURL -}}
-                          {{- end -}}">
+                  <a class="nav-dropdown-link {{ if $active }}active{{ end }}" href="{{ .URL | relLangURL }}">
                     {{ .Name }}
                   </a>
                 </li>
@@ -59,48 +37,71 @@
           </li>
         {{ else }}
           <li class="nav-item">
-            <a class="nav-link {{ if $active }}active{{ end }}" href="{{- if findRE `^#` .URL -}}{{- if not $.IsHome -}}{{- site.Home.RelPermalink -}}{{- end -}}{{- .URL -}}{{- else -}}{{- .URL | relLangURL -}}{{- end -}}">
+            <a class="nav-link {{ if $active }}active{{ end }}" href="{{ .URL | relLangURL }}">
               {{ .Name }}
             </a>
           </li>
         {{ end }}
       {{ end }}
+    </ul>
 
-      <!-- Mobile CTA -->
+    <!-- Right side: search, language, theme, CTA -->
+    <div class="order-2 ml-auto flex items-center space-x-4">
+      {{ with site.Params.search }}
+        {{ if .enable }}
+          <button aria-label="search" class="text-text-dark dark:text-white" data-target="search-modal">
+            <i class="fa-solid fa-search"></i>
+          </button>
+        {{ end }}
+      {{ end }}
+
+      {{ partial "components/language-switcher" (dict "Context" . "Class" "dark:bg-darkmode-light rounded") }}
+      {{ partial "components/theme-switcher" (dict "Class" "") }}
+
       {{ if site.Params.navigation_button.enable }}
-        <li class="mt-4 inline-block lg:hidden">
-          <a class="btn btn-outline-primary btn-sm" href="{{ site.Params.navigation_button.link | relLangURL }}">
+        <a href="{{ site.Params.navigation_button.link | relLangURL }}" class="btn btn-outline-primary btn-sm hidden lg:inline-block">
+          {{ site.Params.navigation_button.label }}
+        </a>
+      {{ end }}
+
+      <!-- Mobile menu toggler -->
+      <div class="lg:hidden flex items-center">
+        <input id="nav-toggle" type="checkbox" class="hidden" />
+        <label for="nav-toggle" class="cursor-pointer flex items-center text-text-dark dark:text-white ml-2">
+          <svg id="show-button" class="h-6 w-6 fill-current block" viewBox="0 0 20 20">
+            <title>Menu Open</title>
+            <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V15z"></path>
+          </svg>
+          <svg id="hide-button" class="h-6 w-6 fill-current hidden" viewBox="0 0 20 20">
+            <title>Menu Close</title>
+            <polygon points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2" transform="rotate(45 10 10)"></polygon>
+          </svg>
+        </label>
+      </div>
+    </div>
+
+    <!-- Mobile menu dropdown -->
+    <ul id="mobile-menu" class="lg:hidden absolute top-full left-0 w-full bg-white dark:bg-darkmode-body shadow-md hidden flex-col">
+      {{ $currentPage := . }}
+      {{ range site.Menus.main }}
+        {{ $menuURL := .URL | absLangURL }}
+        {{ $pageURL := $currentPage.Permalink | absLangURL }}
+        {{ $active := eq $menuURL $pageURL }}
+        <li class="border-b">
+          <a class="block px-4 py-2 {{ if $active }}bg-gray-200 dark:bg-gray-700{{ end }}" href="{{ .URL | relLangURL }}">
+            {{ .Name }}
+          </a>
+        </li>
+      {{ end }}
+      {{ if site.Params.navigation_button.enable }}
+        <li class="px-4 py-2">
+          <a class="btn btn-outline-primary btn-sm w-full" href="{{ site.Params.navigation_button.link | relLangURL }}">
             {{ site.Params.navigation_button.label }}
           </a>
         </li>
       {{ end }}
     </ul>
 
-    <!-- Right side: search, language, theme, CTA -->
-    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
-      {{ with site.Params.search }}
-        {{ if .enable }}
-          <button aria-label="search"
-                  class="border-border text-text-dark hover:text-primary dark:text-white dark:hover:text-darkmode-primary mr-5 inline-block border-r pr-5 lg:border-r-0 lg:pr-0"
-                  data-target="search-modal">
-            <i class="fa-solid fa-search"></i>
-          </button>
-        {{ end }}
-      {{ end }}
-
-      <!-- Language switcher -->
-      {{ partial "components/language-switcher" (dict "Context" . "Class" "mr-5 pl-2 py-1 dark:bg-darkmode-light rounded") }}
-
-      <!-- Theme switcher -->
-      {{ partial "components/theme-switcher" (dict "Class" "mr-5") }}
-
-      <!-- Desktop CTA -->
-      {{ if site.Params.navigation_button.enable }}
-        <a href="{{ site.Params.navigation_button.link | relLangURL }}" class="btn btn-outline-primary btn-sm hidden lg:inline-block">
-          {{ site.Params.navigation_button.label }}
-        </a>
-      {{ end }}
-    </div>
   </nav>
 
   <!-- Alpine.js -->
@@ -109,12 +110,12 @@
     const navToggle = document.getElementById('nav-toggle');
     const showBtn = document.getElementById('show-button');
     const hideBtn = document.getElementById('hide-button');
+    const mobileMenu = document.getElementById('mobile-menu');
 
     navToggle.addEventListener('change', () => {
       showBtn.classList.toggle('hidden');
       hideBtn.classList.toggle('hidden');
+      mobileMenu.classList.toggle('hidden');
     });
   </script>
 </header>
-
-
