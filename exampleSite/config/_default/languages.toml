@@ -1,6 +1,54 @@
-################ English language ##################
+################ English ################
 [en]
-languageName = "En"
+languageName = "English"
 languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
+
+
+################ French ################
+[fr]
+languageName = "Français"
+languageCode = "fr-fr"
+contentDir = "content/french"
+weight = 2
+
+
+################ Italian ################
+[it]
+languageName = "Italiano"
+languageCode = "it-it"
+contentDir = "content/italian"
+weight = 3
+
+
+################ Dutch ################
+[nl]
+languageName = "Nederlands"
+languageCode = "nl-nl"
+contentDir = "content/dutch"
+weight = 4
+
+
+################ German ################
+[de]
+languageName = "Deutsch"
+languageCode = "de-de"
+contentDir = "content/german"
+weight = 5
+
+
+################ Spanish ################
+[es]
+languageName = "Español"
+languageCode = "es-es"
+contentDir = "content/spanish"
+weight = 6
+
+
+################ Ngambay ################
+[ngb]
+languageName = "Ngambay"
+languageCode = "ngb"
+contentDir = "content/ngambay"
+weight = 7
