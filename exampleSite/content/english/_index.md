@@ -5,7 +5,7 @@ title: "Danki Studio"
 banner:
   title: "Maximum Insight. Minimalist Data Architecture"
   content: ".danki studio builds lean, agile, and actionable data solutions for modern businesses."
-  image: "/images/banner.png"
+  image: "/images/polotno.png"
   button:
     enable: true
     label: "Get Started For Free"
@@ -14,7 +14,7 @@ banner:
 # Features
 features:
   - title: "Why Danki Studio?"
-    image: "/images/service-1.png"
+    image: "/images/polotno.png"
     content: "We focus on delivering clean, efficient, and scalable data infrastructures that empower decision-makers."
     bulletpoints:
       - "Maximize the clarity and utility of your data while minimizing complexity, overhead, and costs."
@@ -25,7 +25,7 @@ features:
       link: "#"
 
   - title: "Our Services"
-    image: "/images/service-2.png"
+    image: "/images/polotno.png"
     content: "Danki Studio offers end-to-end data solutions that turn information into business intelligence."
     bulletpoints:
       - "Data modeling and architecture design tailored for agility and efficiency."
@@ -37,7 +37,7 @@ features:
       link: "https://dankistudio.netlify.app/"
 
   - title: "Why Choose Us"
-    image: "/images/service-3.png"
+    image: "/images/polotno.png"
     content: "Our philosophy centers on providing maximum insight with minimal overhead."
     bulletpoints:
       - "Scalable, modular data infrastructure that grows with your business."

@@ -2,7 +2,7 @@
 title: "Bringing Data to Life with Clarity and Purpose"
 meta_title: "About"
 description: "this is meta description"
-image: "/images/avatar.png"
+image: "/images/polotno.png"
 draft: false
 ---
 
@@ -47,8 +47,8 @@ If you want to create data infrastructure and analytics that truly work for your
 📧 **hello@danki.fr**  
 💬 **https://dankistudio.netlify.app**  
 
-image: "/images/avatar.png"
-image: "/images/avatar.png"
+image: "/images/polotno.png"
+image: "/images/polotno.png"
 
 ## The Data Process
 
@@ -62,6 +62,8 @@ Next, we create a tailored data strategy and design plan. This includes modeling
 We implement the chosen solution, building robust data pipelines, dashboards, and analytics frameworks. Throughout the process, we share prototypes or early results for review, iterating until the infrastructure and insights fully meet your team’s needs.
 
 ---
+
+image: "/images/polotno.png"
 
 ## Project Options
 
@@ -78,7 +80,7 @@ We adapt our engagement to your specific requirements. Here’s how we can colla
 
 # A Botanist Turning Complex Data into Actionable Insights
 
-![Photo of Nambona-Adeline](path-to-your-photo.jpg)
+image: "/images/polotno.png"
 
 My name is Nambona-Adeline. I am a botanist by training and the founder of **Danki Studio**, where I help organizations design lean, agile, and effective data infrastructures. I live and work in [your city/country], combining a love for nature and analytical problem-solving in everything I do.
 
@@ -96,4 +98,4 @@ Over the years, my work has been acknowledged by various communities and organiz
 - Recognition for designing **efficient, scalable, and actionable data solutions**
 - Collaborations with organizations seeking to improve data-driven decision-making
 
-![Photo of Nambona-Adeline](path-to-your-photo.jpg)
+image: "/images/polotno.png"
