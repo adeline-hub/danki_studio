@@ -212,3 +212,18 @@
     color: #eaeaea;
   }
 }
+
+/* ===========================
+   FORCE Portfolio layout
+   =========================== */
+
+.page-portfolio .container,
+.page-portfolio .row,
+.page-portfolio .col-12 {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+.page-portfolio .portfolio-grid {
+  display: grid !important;
+}

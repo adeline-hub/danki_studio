@@ -1,5 +1,6 @@
 ---
 title: "Portfolio"
+body_class: "page-portfolio"
 ---
 
 <section class="portfolio-grid" aria-label="Selected projects">
