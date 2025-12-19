@@ -1,5 +1,5 @@
 ---
-title: "Urban Water — Minimal Data, Maximum Insight"
+title: "energy-grids — Minimal Data, Maximum Insight"
 date: 2025-03-01
 categories:
   - Data Exploration

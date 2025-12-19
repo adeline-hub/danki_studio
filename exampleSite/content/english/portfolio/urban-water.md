@@ -1,6 +1,8 @@
 ---
 title: "Urban Water — Minimal Data, Maximum Insight"
 date: 2025-03-01
+image: "images/portfolio/base.png"  # C'est souvent ce qui manque !
+description: "Une brève description pour remplir l'espace."
 categories:
   - Data Exploration
   - Urban Systems
@@ -19,6 +21,8 @@ tools:
   - Plotly
   - Network Analysis
 ---
+
+
 
 ## Urban Water — Invisible Infrastructure, Visible Insight
 
