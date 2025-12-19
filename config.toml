@@ -3,8 +3,7 @@
 # ===============================
 baseURL = "https://dankistudio.netlify.app/"
 languageCode = "fr-FR"
-title = "Danki Studio"
-theme = "hugoplate"
+title = "danki studio"
 enableRobotsTXT = true
 paginate = 10
 
