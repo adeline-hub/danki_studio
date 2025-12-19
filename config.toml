@@ -7,6 +7,9 @@ title = "danki studio"
 enableRobotsTXT = true
 paginate = 10
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [params]
   navbar_fixed = true
   theme_switcher = true
@@ -165,5 +168,3 @@ paginate = 10
       url = "/contact/"
       weight = 5
 
-[markup.goldmark.renderer]
-  unsafe = true
