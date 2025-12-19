@@ -48,7 +48,6 @@ If you want to create data infrastructure and analytics that truly work for your
 💬 **https://dankistudio.netlify.app**  
 
 image: "/images/polotno.png"
-image: "/images/polotno.png"
 
 ## The Data Process
 
