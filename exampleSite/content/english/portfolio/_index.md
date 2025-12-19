@@ -3,6 +3,27 @@ title: "Portfolio"
 body_class: "page-portfolio"
 ---
 
+
+<style>
+  /* On force la grille à ignorer les limites du thème */
+  .portfolio-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 20px !important;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .project-card { text-decoration: none !important; color: black !important; }
+  .img-box { overflow: hidden; border-radius: 5px; aspect-ratio: 4/3; }
+  .img-box img { width: 100%; height: 100%; object-fit: cover; transition: 0.4s; }
+  .project-card:hover img { transform: scale(1.1); }
+  
+  @media (max-width: 768px) {
+    .portfolio-grid { grid-template-columns: 1fr !important; }
+  }
+</style>
+
 <section class="portfolio-grid" aria-label="Selected projects">
 
   <a href="{{ "portfolio/janus/" | relURL }}" class="project-card">
