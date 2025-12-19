@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{ partial "page-header" . }}
+
+<section class="section">
+  <div class="container">
+    <div class="row g-4 justify-center">
+      {{ range .Pages }}
+      <div class="col-12 md:col-6 lg:col-4">
+        <div class="relative rounded-xl border border-border bg-gradient-to-b from-body to-light p-8 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-darkmode-border dark:from-darkmode-body dark:to-darkmode-light h-full flex flex-col justify-between">
+          <div>
+            <h3 class="h4 mb-4 text-text-dark dark:text-darkmode-text-dark">
+              {{ .Title }}
+            </h3>
+            <p class="mb-6 text-sm">
+              {{ .Summary | truncate 100 }}
+            </p>
+          </div>
+          
+          <div>
+            <a href="{{ .Permalink }}" class="btn btn-outline-primary btn-sm">
+              Consulter les données
+            </a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}
