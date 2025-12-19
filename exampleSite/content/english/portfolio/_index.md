@@ -2,51 +2,103 @@
 title: "Portfolio"
 ---
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 20px 0;">
+<style>
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px 0;
+  }
+  .project-card {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+  }
+  .image-container {
+    overflow: hidden;
+    border-radius: 8px;
+    line-height: 0;
+  }
+  .project-card img {
+    width: 100%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+  }
+  .project-card:hover img {
+    transform: scale(1.05); /* The Zoom effect */
+    filter: brightness(1.1);
+  }
+  .project-card figcaption {
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+</style>
 
-  <figure style="margin: 0; text-align: center;">
-    <a href="/portfolio/janus/"><img src="/images/portfolio/base.png" alt="Janus" style="width: 100%; border-radius: 4px;"></a>
-    <figcaption style="margin-top: 10px; font-weight: bold; font-family: sans-serif;">Janus Mediterranean Investment Analytics</figcaption>
-  </figure>
+<div class="portfolio-grid">
 
-  <figure style="margin: 0; text-align: center;">
-    <a href="/portfolio/cernunnos/"><img src="/images/portfolio/base.png" alt="Cernunnos" style="width: 100%; border-radius: 4px;"></a>
-    <figcaption style="margin-top: 10px; font-weight: bold; font-family: sans-serif;">Cernunnos PropTech Investment Analytics</figcaption>
-  </figure>
+  <a href="/portfolio/janus/" class="project-card">
+    <figure>
+      <div class="image-container"><img src="/images/portfolio/base.png" alt="Janus"></div>
+      <figcaption>Janus Mediterranean Investment Analytics</figcaption>
+    </figure>
+  </a>
 
-  <figure style="margin: 0; text-align: center;">
-    <a href="/portfolio/citrus/"><img src="/images/portfolio/base.png" alt="Citrus" style="width: 100%; border-radius: 4px;"></a>
-    <figcaption style="margin-top: 10px; font-weight: bold; font-family: sans-serif;">Citrus — Botany, Diversity & Data</figcaption>
-  </figure>
+  <a href="/portfolio/cernunnos/" class="project-card">
+    <figure>
+      <div class="image-container"><img src="/images/portfolio/base.png" alt="Cernunnos"></div>
+      <figcaption>Cernunnos PropTech Investment Analytics</figcaption>
+    </figure>
+  </a>
 
-  <figure style="margin: 0; text-align: center;">
-    <a href="/portfolio/monastic-mapping/"><img src="/images/portfolio/base.png" alt="Monastic" style="width: 100%; border-radius: 4px;"></a>
-    <figcaption style="margin-top: 10px; font-weight: bold; font-family: sans-serif;">Monastic Mapping — Economic Networks</figcaption>
-  </figure>
+  <a href="/portfolio/citrus/" class="project-card">
+    <figure>
+      <div class="image-container"><img src="/images/portfolio/base.png" alt="Citrus"></div>
+      <figcaption>Citrus — Botany, Diversity & Data</figcaption>
+    </figure>
+  </a>
 
-  <figure style="margin: 0; text-align: center;">
-    <a href="/portfolio/urban-water/"><img src="/images/portfolio/base.png" alt="Urban Water" style="width: 100%; border-radius: 4px;"></a>
-    <figcaption style="margin-top: 10px; font-weight: bold; font-family: sans-serif;">Urban Water — Minimal Data, Maximum Insight</figcaption>
-  </figure>
+  <a href="/portfolio/monastic-mapping/" class="project-card">
+    <figure>
+      <div class="image-container"><img src="/images/portfolio/base.png" alt="Monastic"></div>
+      <figcaption>Monastic Mapping — Middle Ages</figcaption>
+    </figure>
+  </a>
 
-  <figure style="margin: 0; text-align: center;">
-    <a href="/portfolio/climate-tracking/"><img src="/images/portfolio/base.png" alt="Climate" style="width: 100%; border-radius: 4px;"></a>
-    <figcaption style="margin-top: 10px; font-weight: bold; font-family: sans-serif;">Global Climate Variance — 2024 Study</figcaption>
-  </figure>
+  <a href="/portfolio/urban-water/" class="project-card">
+    <figure>
+      <div class="image-container"><img src="/images/portfolio/base.png" alt="Water"></div>
+      <figcaption>Urban Water — Minimal Data</figcaption>
+    </figure>
+  </a>
 
-  <figure style="margin: 0; text-align: center;">
-    <a href="/portfolio/supply-chain-viz/"><img src="/images/portfolio/base.png" alt="Supply Chain" style="width: 100%; border-radius: 4px;"></a>
-    <figcaption style="margin-top: 10px; font-weight: bold; font-family: sans-serif;">Logistics Flows & Supply Chain Nodes</figcaption>
-  </figure>
+  <a href="/portfolio/climate-tracking/" class="project-card">
+    <figure>
+      <div class="image-container"><img src="/images/portfolio/base.png" alt="Climate"></div>
+      <figcaption>Global Climate Variance Study</figcaption>
+    </figure>
+  </a>
 
-  <figure style="margin: 0; text-align: center;">
-    <a href="/portfolio/cultural-atlas/"><img src="/images/portfolio/base.png" alt="Cultural Atlas" style="width: 100%; border-radius: 4px;"></a>
-    <figcaption style="margin-top: 10px; font-weight: bold; font-family: sans-serif;">The Cultural Atlas of Migration</figcaption>
-  </figure>
+  <a href="/portfolio/supply-chain-viz/" class="project-card">
+    <figure>
+      <div class="image-container"><img src="/images/portfolio/base.png" alt="Supply"></div>
+      <figcaption>Logistics & Supply Chain Nodes</figcaption>
+    </figure>
+  </a>
 
-  <figure style="margin: 0; text-align: center;">
-    <a href="/portfolio/energy-grids/"><img src="/images/portfolio/base.png" alt="Energy Grids" style="width: 100%; border-radius: 4px;"></a>
-    <figcaption style="margin-top: 10px; font-weight: bold; font-family: sans-serif;">Renewable Energy Transition Analytics</figcaption>
-  </figure>
+  <a href="/portfolio/cultural-atlas/" class="project-card">
+    <figure>
+      <div class="image-container"><img src="/images/portfolio/base.png" alt="Atlas"></div>
+      <figcaption>The Cultural Atlas of Migration</figcaption>
+    </figure>
+  </a>
+
+  <a href="/portfolio/energy-transition/" class="project-card">
+    <figure>
+      <div class="image-container"><img src="/images/portfolio/base.png" alt="Energy"></div>
+      <figcaption>Renewable Energy Transition</figcaption>
+    </figure>
+  </a>
 
 </div>
