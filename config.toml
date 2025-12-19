@@ -165,3 +165,6 @@ paginate = 10
       name = "Ndub-mbe" # Contact
       url = "/contact/"
       weight = 5
+
+[markup.goldmark.renderer]
+  unsafe = true
