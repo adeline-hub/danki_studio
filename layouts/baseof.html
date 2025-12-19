@@ -7,6 +7,9 @@
   lang="{{ site.LanguageCode | default `en-US` }}"
   itemtype="http://schema.org/WebPage">
   <head>
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+
+
     <!-- head (don't cache it) -->
     {{ partial "essentials/head.html" . }}
 
