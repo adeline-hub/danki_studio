@@ -2,71 +2,15 @@
 title: "Portfolio"
 ---
 
-{{< rawhtml >}}
-
-<style>
-  .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 40px 0;
-  }
-
-  /* Tablette */
-  @media (max-width: 1024px) {
-    .portfolio-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  /* Mobile */
-  @media (max-width: 640px) {
-    .portfolio-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .project-card {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-  }
-
-  .image-container {
-    overflow: hidden;
-    border-radius: 12px;
-    line-height: 0;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    background: #f4f4f4;
-  }
-
-  .project-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.5s ease, filter 0.5s ease;
-  }
-
-  .project-card:hover img {
-    transform: scale(1.08);
-    filter: brightness(1.05);
-  }
-
-  .project-card figcaption {
-    margin-top: 14px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    text-align: center;
-    color: #222;
-  }
-</style>
-
-<div class="portfolio-grid">
+<section class="portfolio-grid" aria-label="Selected projects">
 
   <a href="{{ "portfolio/janus/" | relURL }}" class="project-card">
     <figure>
       <div class="image-container">
-        <img src="{{ "images/portfolio/base.png" | relURL }}" alt="Janus project">
+        <img
+          src="{{ "images/portfolio/base.png" | relURL }}"
+          alt="Janus — Mediterranean investment analytics project"
+          loading="lazy">
       </div>
       <figcaption>Janus — Mediterranean Investment Analytics</figcaption>
     </figure>
@@ -75,7 +19,10 @@ title: "Portfolio"
   <a href="{{ "portfolio/cernunnos/" | relURL }}" class="project-card">
     <figure>
       <div class="image-container">
-        <img src="{{ "images/portfolio/base.png" | relURL }}" alt="Cernunnos project">
+        <img
+          src="{{ "images/portfolio/base.png" | relURL }}"
+          alt="Cernunnos — PropTech investment analytics project"
+          loading="lazy">
       </div>
       <figcaption>Cernunnos — PropTech Investment Analytics</figcaption>
     </figure>
@@ -84,7 +31,10 @@ title: "Portfolio"
   <a href="{{ "portfolio/citrus/" | relURL }}" class="project-card">
     <figure>
       <div class="image-container">
-        <img src="{{ "images/portfolio/base.png" | relURL }}" alt="Citrus project">
+        <img
+          src="{{ "images/portfolio/base.png" | relURL }}"
+          alt="Citrus — botany, diversity and data project"
+          loading="lazy">
       </div>
       <figcaption>Citrus — Botany, Diversity & Data</figcaption>
     </figure>
@@ -93,7 +43,10 @@ title: "Portfolio"
   <a href="{{ "portfolio/monastic-mapping/" | relURL }}" class="project-card">
     <figure>
       <div class="image-container">
-        <img src="{{ "images/portfolio/base.png" | relURL }}" alt="Monastic Mapping project">
+        <img
+          src="{{ "images/portfolio/base.png" | relURL }}"
+          alt="Monastic Mapping — medieval data cartography project"
+          loading="lazy">
       </div>
       <figcaption>Monastic Mapping — Middle Ages</figcaption>
     </figure>
@@ -102,7 +55,10 @@ title: "Portfolio"
   <a href="{{ "portfolio/urban-water/" | relURL }}" class="project-card">
     <figure>
       <div class="image-container">
-        <img src="{{ "images/portfolio/base.png" | relURL }}" alt="Urban Water project">
+        <img
+          src="{{ "images/portfolio/base.png" | relURL }}"
+          alt="Urban Water — minimal data visualization project"
+          loading="lazy">
       </div>
       <figcaption>Urban Water — Minimal Data</figcaption>
     </figure>
@@ -111,7 +67,10 @@ title: "Portfolio"
   <a href="{{ "portfolio/climate-tracking/" | relURL }}" class="project-card">
     <figure>
       <div class="image-container">
-        <img src="{{ "images/portfolio/base.png" | relURL }}" alt="Climate Tracking project">
+        <img
+          src="{{ "images/portfolio/base.png" | relURL }}"
+          alt="Global climate variance tracking project"
+          loading="lazy">
       </div>
       <figcaption>Global Climate Variance Study</figcaption>
     </figure>
@@ -120,7 +79,10 @@ title: "Portfolio"
   <a href="{{ "portfolio/supply-chain-viz/" | relURL }}" class="project-card">
     <figure>
       <div class="image-container">
-        <img src="{{ "images/portfolio/base.png" | relURL }}" alt="Supply Chain project">
+        <img
+          src="{{ "images/portfolio/base.png" | relURL }}"
+          alt="Logistics and supply chain nodes visualization project"
+          loading="lazy">
       </div>
       <figcaption>Logistics & Supply Chain Nodes</figcaption>
     </figure>
@@ -129,7 +91,10 @@ title: "Portfolio"
   <a href="{{ "portfolio/cultural-atlas/" | relURL }}" class="project-card">
     <figure>
       <div class="image-container">
-        <img src="{{ "images/portfolio/base.png" | relURL }}" alt="Cultural Atlas project">
+        <img
+          src="{{ "images/portfolio/base.png" | relURL }}"
+          alt="Cultural atlas of migration project"
+          loading="lazy">
       </div>
       <figcaption>The Cultural Atlas of Migration</figcaption>
     </figure>
@@ -138,12 +103,13 @@ title: "Portfolio"
   <a href="{{ "portfolio/energy-transition/" | relURL }}" class="project-card">
     <figure>
       <div class="image-container">
-        <img src="{{ "images/portfolio/base.png" | relURL }}" alt="Energy Transition project">
+        <img
+          src="{{ "images/portfolio/base.png" | relURL }}"
+          alt="Renewable energy transition analysis project"
+          loading="lazy">
       </div>
       <figcaption>Renewable Energy Transition</figcaption>
     </figure>
   </a>
 
-</div>
-
-{{< /rawhtml >}}
+</section>
