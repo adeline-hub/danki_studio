@@ -5,34 +5,49 @@ title: "Portfolio"
 <style>
   .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+    /* Force 3 colonnes sur ordinateur, 1 sur mobile */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     padding: 20px 0;
   }
-  .project-card {
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s ease;
+
+  @media (max-width: 768px) {
+    .portfolio-grid {
+      grid-template-columns: 1fr;
+    }
   }
+
+  .project-card {
+    text-decoration: none !important;
+    color: inherit;
+    display: block;
+  }
+
   .image-container {
     overflow: hidden;
     border-radius: 8px;
     line-height: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
+
   .project-card img {
     width: 100%;
+    height: auto;
     transition: transform 0.5s ease, filter 0.5s ease;
   }
+
   .project-card:hover img {
-    transform: scale(1.05); /* The Zoom effect */
+    transform: scale(1.08);
     filter: brightness(1.1);
   }
+
   .project-card figcaption {
     margin-top: 15px;
     font-family: sans-serif;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
+    color: #333;
   }
 </style>
 
