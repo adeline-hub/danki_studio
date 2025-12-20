@@ -1,7 +1,16 @@
 ---
 title: "Portfolio"
 body_class: "page-portfolio"
+meta_title: ""
+description: "This is meta description"
+draft: false
 ---
+
+# My Portfolio
+
+Voici quelques projets récents :
+
+{{< gallery dir="images/portfolio" class="" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
 
 <section class="container mx-auto py-12" aria-label="Selected projects">
   <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
