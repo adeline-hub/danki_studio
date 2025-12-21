@@ -5,7 +5,7 @@ description: "About Danki Studio — data architecture, analytics, and strategy"
 draft: false
 ---
 
-{{< image-strip images="/images/a.png,/images/b.png,/images/c.png,/images/d.png,/images/e.png" >}}
+{{< image-strip images="/images/base.png,/images/base.png,/images/base.png,/images/base.png,/images/base.png" >}}
 
 At **Danki Studio**, we help organizations unlock the full potential of their data.
 
@@ -15,22 +15,22 @@ Whether your data lives in spreadsheets, databases, streaming systems, or siloed
 
 ---
 
-{{< split-section image="/images/polotno.png" alt="Data artwork" imagePosition="left" >}}
+{{< split-section image="/images/base.png" alt="Data artwork" imagePosition="left" >}}
 
 ## What We Do Best
 
 Our services are shaped around your goals — never generic tools or one‑size‑fits‑all solutions. Every engagement begins with understanding **what you need to decide, explain, or change**.
 
-**Data Architecture & Modeling**  
+- **Data Architecture & Modeling**  
 Designing agile, efficient data structures that scale with your organization and make data easy to query, maintain, and evolve.
 
-**ETL & Pipeline Design**  
+- **ETL & Pipeline Design**  
 Building lean, reliable pipelines that move, clean, and transform data without unnecessary complexity.
 
-**Business Intelligence & Dashboards**  
+- **Business Intelligence & Dashboards**  
 Creating dashboards and reporting environments that surface insights quickly and intuitively.
 
-**Data Strategy & Consulting**  
+- **Data Strategy & Consulting**  
 Partnering with teams to define priorities, governance, and long‑term data strategies aligned with real business outcomes.
 
 If you’re ready to turn your data into a strategic asset, we’d love to hear from you.
@@ -50,11 +50,9 @@ We believe data is most powerful when it is:
 
 This mindset — **Maximum Insight, Minimalist Data Architecture** — guides everything we design and build. We focus on what matters: clarity, insight, and impact.
 
-{{< full-image src="/images/polotno.png" alt="Process illustration" >}}
+{{< full-image src="/images/base.png" alt="Process illustration" >}}
 
 ---
-
-## The Data Process
 
 {{< process-steps >}}
 
@@ -74,24 +72,24 @@ We implement pipelines, dashboards, and analytics systems, iterating through fee
 
 ---
 
-{{< split-section image="/images/polotno.png" alt="Project planning" imagePosition="right" >}}
+{{< split-section image="/images/base.png" alt="Project planning" imagePosition="right" >}}
 
 ## Project Options
 
-**The Full Process — End‑to‑End Data Solution**  
+- **The Full Process — End‑to‑End Data Solution**  
 Complete ownership from integration to dashboards, delivered through an iterative process.
 
-**Focused Design — Strategic Support**  
+- **Focused Design — Strategic Support**  
 Architecture, pipeline, or dashboard design while your internal team handles implementation.
 
-**Consulting & Advice — Optimize Existing Systems**  
+- **Consulting & Advice — Optimize Existing Systems**  
 Review and improvement of existing data infrastructure and analytics.
 
 {{< /split-section >}}
 
 ---
 
-{{< split-section image="/images/polotno.png" alt="Portrait" imagePosition="left" >}}
+{{< split-section image="/images/base.png" alt="Portrait" imagePosition="left" >}}
 
 ## A Botanist Turning Complex Data into Actionable Insights
 
