@@ -14,8 +14,8 @@
   </div>
 
   <!-- Text -->
-  <div class="prose prose-lg dark:prose-invert">
-    {{ .Inner }}
-  </div>
+<div class="prose prose-lg dark:prose-invert">
+  {{ .Inner | markdownify }}
+</div>
 
 </section>
