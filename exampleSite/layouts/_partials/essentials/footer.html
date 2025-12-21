@@ -1,58 +1,74 @@
-<footer class="bg-light dark:bg-darkmode-light">
-  <div class="container">
-    <div class="row items-center py-10">
-      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
-        <!-- navbar brand/logo -->
+<footer class="relative bg-gradient-to-br from-sky-500 to-teal-400 dark:from-sky-800 dark:to-teal-700 text-white">
+
+  <!-- Main CTA -->
+  <div class="container py-20">
+    <h2 class="max-w-4xl text-4xl md:text-5xl font-semibold leading-tight">
+      Interested in transforming your data into
+      <span class="italic">clear, meaningful insights</span>?
+      <br class="hidden md:block" />
+      Let’s talk.
+    </h2>
+
+    <div class="mt-12 grid gap-10 md:grid-cols-2">
+
+      <!-- Contact -->
+      <div>
         <a
-          class="navbar-brand inline-block"
-          href="{{ site.Home.RelPermalink }}">
-          {{ partial "logo" }}
+          href="mailto:hello@danki.fr"
+          class="text-2xl font-medium underline underline-offset-4 hover:opacity-80"
+        >
+          hello@danki.fr
         </a>
+
+        <p class="mt-4 text-sm opacity-90 max-w-md">
+          Data visualization, analytics & digital storytelling
+          for research, public institutions, and impact‑driven teams.
+        </p>
       </div>
-      <div class="lg:col-6 mb-8 text-center lg:mb-0">
-        <ul>
-          {{ range site.Menus.footer }}
-            <li class="m-3 inline-block">
-              <a
-                {{ if findRE `^http` .URL }}
-                  target="_blank" rel="noopener"
-                {{ end }}
-                href="{{ if findRE `^#` .URL }}
-                  {{ if not $.IsHome }}
-                    {{ site.Home.RelPermalink }}
-                  {{ end }}{{ .URL }}
-                {{ else }}
-                  {{ .URL | relLangURL }}
-                {{ end }}"
-                >{{ .Name }}</a
-              >
-            </li>
-          {{ end }}
-        </ul>
-      </div>
-      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
-        <ul class="social-icons">
+
+      <!-- Social -->
+      <div class="md:text-right">
+        <p class="mb-4 text-sm opacity-90">
+          Follow or get in touch
+        </p>
+
+        <ul class="flex md:justify-end gap-4">
           {{ range site.Data.social.main }}
             <li>
               <a
+                href="{{ .link | safeURL }}"
                 target="_blank"
+                rel="noopener"
                 aria-label="{{ .name }}"
-                rel="nofollow noopener"
-                href="{{ .link | safeURL }}">
+                class="inline-flex h-10 w-10 items-center justify-center rounded-full
+                       bg-white/20 hover:bg-white/30 transition"
+              >
                 <i class="{{ .icon }}"></i>
               </a>
             </li>
           {{ end }}
         </ul>
       </div>
+
     </div>
   </div>
-  <div class="border-border dark:border-darkmode-border border-t py-7">
-    <div
-      class="text-text-light dark:text-darkmode-text-light container text-center">
-      <p>
-        {{ site.Params.copyright | markdownify }}
+
+  <!-- Bottom bar -->
+  <div class="border-t border-white/30">
+    <div class="container py-6 text-sm flex flex-col md:flex-row items-center justify-between gap-4">
+
+      <p class="opacity-80">
+        © 2025 Danki Studio — Built with
+        <a href="https://gohugo.io" target="_blank" class="underline">Hugo</a>
+        & hosted on
+        <a href="https://www.netlify.com" target="_blank" class="underline">Netlify</a>
       </p>
+
+      <a href="/privacy" class="underline opacity-80 hover:opacity-100">
+        Privacy Policy
+      </a>
+
     </div>
   </div>
+
 </footer>
