@@ -7,94 +7,82 @@ draft: false
 ---
 
 
-At Danki Studio, we are passionate about helping organizations unlock the full potential of their data. By transforming complex datasets into clear, actionable insights, we empower teams to **make better decisions, tell compelling stories with data, and create measurable impact**.
+Bringing Data to Life with Clarity and Purpose
+At Danki Studio, we help organizations unlock the full potential of their data.
 
-Whether your data lives in spreadsheets, databases, streaming systems, or siloed applications, we help you harness it with minimalist, scalable data architecture and thoughtful design.
+By transforming complex datasets into clear, actionable insights, we empower teams to make better decisions, communicate effectively, and create measurable impact. Our work bridges the gap between raw data and meaningful understanding.
 
-## What We Do Best
+Whether your data lives in spreadsheets, databases, streaming systems, or siloed applications, we help you harness it through minimalist, scalable data architecture and thoughtful analytical design.
 
-Our services are tailored to meet the unique needs of each client — we never believe in one‑size‑fits‑all solutions. Every engagement starts with your goals and challenges, not generic tools or templates, to ensure the work we do unlocks real value and understanding:
+{{< full-image src="/images/polotno.png" alt="Data architecture and visualization" >}}
 
-- **Data Architecture & Modeling** — Design agile, efficient data structures that scale with your business and make data easy to query and use.
-- **ETL & Pipeline Design** — Build lean data pipelines that move, clean, and transform data reliably without unnecessary complexity.
-- **Business Intelligence & Dashboards** — Develop dashboards and reporting environments that surface insights quickly and intuitively.
-- **Data Strategy & Consulting** — Partner with your teams to define data priorities, governance, and strategies for long‑term success.
+What We Do Best
+Our services are shaped around your goals — never generic tools or one‑size‑fits‑all solutions. Every engagement begins with understanding what you need to decide, explain, or change.
 
-If you’re ready to transform your data into a strategic asset, we’d love to hear from you.
+Data Architecture & Modeling
+Designing agile, efficient data structures that scale with your organization and make data easy to query, maintain, and evolve.
 
-## Our Philosophy
+ETL & Pipeline Design
+Building lean, reliable pipelines that move, clean, and transform data without unnecessary complexity.
 
-We believe that data is most powerful when it is:
+Business Intelligence & Dashboards
+Creating dashboards and reporting environments that surface insights quickly and intuitively.
 
-- **Clear** — Easily understood by the people who need it.
-- **Actionable** — Directly connected to decisions and outcomes.
-- **Lean** — Designed to reduce complexity, cost, and maintenance burden.
-- **Purpose‑Driven** — Aligned with your organization’s mission and goals.
+Data Strategy & Consulting
+Partnering with teams to define priorities, governance, and long‑term data strategies aligned with real business outcomes.
 
-This mindset — **Maximum Insight, Minimalist Data Architecture** — guides everything we build and advise. We focus on what matters: insight, clarity, and impact.
+If you’re ready to turn your data into a strategic asset, we’d love to hear from you.
 
-## Who We Are
+Our Philosophy
+We believe data is most powerful when it is:
 
-Danki Studio is a team of data strategists, architects, and engineers dedicated to simplifying data complexity. We combine technical expertise with business understanding to help organizations of all sizes get more value from their data.
+Clear — easily understood by the people who need it
+Actionable — directly connected to decisions and outcomes
+Lean — reducing complexity, cost, and maintenance
+Purpose‑Driven — aligned with mission and goals
+This mindset — Maximum Insight, Minimalist Data Architecture — guides everything we design and build. We focus on what matters: clarity, insight, and impact.
 
-Our background spans data engineering, analytics, visualization, and business intelligence. What unites us is a commitment to **building data systems that are efficient, sustainable, and easy to use**.
+{{< full-image src="/images/polotno.png" alt="Process illustration" >}}
 
-When we’re not designing data solutions, you might find us writing about data topics, exploring new tools and methods, or speaking at data community events.
+The Data Process
+1. Understand Data + Goals
+We analyze your data — structure, volume, sources, and quality — while clarifying the business questions you want to answer. This ensures every solution is grounded in real objectives.
 
-## Get in Touch
+2. Design + Strategy
+We define a tailored strategy covering modeling, pipelines, and visualization. Concepts are shared early and refined collaboratively.
 
-If you want to create data infrastructure and analytics that truly work for your team — not against it — let’s connect:  
-📧 **hello@danki.fr**  
-💬 **https://dankistudio.netlify.app**  
+3. Build + Iterate
+We implement pipelines, dashboards, and analytics systems, iterating through feedback until the solution fully supports your team.
 
-image: "/images/polotno.png"
+Project Options
+We adapt our engagement to your needs:
 
-## The Data Process
+The Full Process — End‑to‑End Data Solution
+Complete ownership from integration to dashboards, delivered through an iterative and transparent process.
 
-### 1. Understand Data + Goals
-We begin by analyzing your data — its structure, volume, sources, and quality — and understanding the business goals you aim to achieve. This ensures that the solutions we design are **aligned with your objectives and actionable**.
+Focused Design — Strategic Support
+Architecture, pipeline, or dashboard design while your internal team handles implementation.
 
-### 2. Design + Strategy
-Next, we create a tailored data strategy and design plan. This includes modeling, pipeline architecture, and reporting/visualization concepts. We share our approach with you for feedback and collaboratively decide on the best direction.
+Consulting & Advice — Optimize Existing Systems
+Review and improvement of existing data infrastructure, analytics, and reporting.
 
-### 3. Build + Iterate
-We implement the chosen solution, building robust data pipelines, dashboards, and analytics frameworks. Throughout the process, we share prototypes or early results for review, iterating until the infrastructure and insights fully meet your team’s needs.
+{{< full-image src="/images/polotno.png" alt="Portrait or working environment" >}}
 
----
+A Botanist Turning Complex Data into Actionable Insights
+My name is Nambona‑Adeline, botanist by training and founder of Danki Studio.
 
-image: "/images/polotno.png"
+With a background in botany and data analysis, I bring a scientific and systems‑oriented perspective to data strategy, architecture, and visualization. My work blends rigorous analysis with thoughtful design to make complex systems understandable and usable.
 
-## Project Options
+Data infrastructure sits at the intersection of my passions: uncovering patterns in complex systems and communicating findings clearly to drive decisions.
 
-We adapt our engagement to your specific requirements. Here’s how we can collaborate:
+When I’m not building data solutions, I enjoy exploring nature, studying plants, hiking, and immersing myself in research and creative projects.
 
-- **The Full Process | End-to-End Data Solution**  
-  We handle everything: data integration, cleaning, modeling, pipeline setup, and dashboard creation. Through an iterative process, we deliver a fully operational system that provides **reliable, actionable insights**.
+Selected Recognition
+Recognition for design work in the 2025 WEB Du Bois Challenge (Data Visualization Society)
+Featured projects in industry blogs and publications
+Collaborations with organizations improving data‑driven decision‑making
+Get in Touch
+If you want data infrastructure and analytics that truly work for your team — not against it:
 
-- **Focused Design | Strategic Implementation Support**  
-  If you already have development resources, we can focus on **data architecture, pipeline design, or dashboard strategy**, providing prototypes and guidance while your team handles implementation.
-
-- **Consulting & Advice | Optimize Existing Systems**  
-  We review and improve your current data infrastructure, analytics pipelines, and dashboards, ensuring they are **efficient, scalable, and aligned with business goals**.
-
-# A Botanist Turning Complex Data into Actionable Insights
-
-image: "/images/polotno.png"
-
-My name is Nambona-Adeline. I am a botanist by training and the founder of **Danki Studio**, where I help organizations design lean, agile, and effective data infrastructures. I live and work in [your city/country], combining a love for nature and analytical problem-solving in everything I do.
-
-With a background in botany and experience in data analysis, I bring a unique perspective to data strategy, architecture, and visualization. My scientific training enables me to **understand complex datasets and translate them into actionable insights**, while my creative instincts guide the design of dashboards, analytics frameworks, and reporting solutions that are intuitive and effective.
-
-Data infrastructure and analytics are the perfect intersection of my passions: applying rigorous scientific methods, uncovering patterns in complex systems, and communicating findings clearly to drive decisions. Since founding Danki Studio, I have helped businesses and organizations **maximize the utility of their data while minimizing unnecessary complexity**.
-
-When I’m not building data solutions, I enjoy exploring nature, studying plants, hiking, and immersing myself in research or reading. I also find joy in creative hobbies that keep my mind curious and engaged.
-
-## Selected Recognition
-Over the years, my work has been acknowledged by various communities and organizations for its clarity, impact, and innovation in data strategy and visualization:
-
-- Recognition for designing in **2025 WEB Dubois challenge by the Data Visualization Society**
-- Featured projects in industry blogs and publications
-- Recognition for designing **efficient, scalable, and actionable data solutions**
-- Collaborations with organizations seeking to improve data-driven decision-making
-
-image: "/images/polotno.png"
+📧 hello@danki.fr
+🌐 https://dankistudio.netlify.app
