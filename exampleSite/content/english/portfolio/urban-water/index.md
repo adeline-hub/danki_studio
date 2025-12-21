@@ -1,24 +1,11 @@
 ---
-title: "supply-chain-viz — Minimal Data, Maximum Insight"
+title: "Urban Water — Minimal Data, Maximum Insight"
 date: 2025-03-01
-categories:
-  - Data Exploration
-  - Urban Systems
-  - Infrastructure Analytics
-tags:
-  - Water
-  - Cities
-  - Infrastructure
-  - ESG
-  - Risk Analysis
-client: "Personal Research Project"
-tools:
-  - Python
-  - Pandas
-  - GIS
-  - Plotly
-  - Network Analysis
+cover: "cover.png"
+summary: "Minimal Data, Maximum Insight"
 ---
+
+
 
 ## Urban Water — Invisible Infrastructure, Visible Insight
 

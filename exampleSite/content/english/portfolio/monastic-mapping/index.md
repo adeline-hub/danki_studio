@@ -1,6 +1,8 @@
 ---
 title: "Monastic Mapping — Economic Networks of the Middle Ages"
-date: 2025-02-01
+date: 2025-05-05
+cover: "cover.png"
+summary: "Minimal Data, Maximum Insight"
 categories:
   - Historical Data Analysis
   - Economic History

@@ -1,6 +1,8 @@
 ---
 title: "Cernunnos PropTech Investment Analytics"
-date: 2025-01-01
+date: 2024-01-01
+cover: "cover.png"
+summary: "Minimal Data, Maximum Insight"
 categories:
   - Data Analytics
   - PropTech
@@ -17,6 +19,7 @@ tools:
   - Power BI / Dash
   - Pandas
   - Plotly
+
 ---
 
 ## Cernunnos PropTech Investment Analytics

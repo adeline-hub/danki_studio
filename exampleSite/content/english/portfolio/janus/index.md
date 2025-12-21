@@ -1,6 +1,8 @@
 ---
 title: "Janus Mediterranean Investment Analytics"
-date: 2024-12-01
+date: 2023-01-01
+cover: "cover.png"
+summary: "Minimal Data, Maximum Insight"
 categories:
   - Data Analytics
   - Investment Intelligence
@@ -17,6 +19,7 @@ tools:
   - Power BI / Dash
   - Pandas
   - Plotly
+
 ---
 
 ## Janus Mediterranean Investment Analytics

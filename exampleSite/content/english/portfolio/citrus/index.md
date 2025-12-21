@@ -1,6 +1,8 @@
 ---
 title: "Citrus — Botany, Diversity & Data"
-date: 2025-01-15
+date: 2024-01-15
+cover: "cover.png"
+summary: "Minimal Data, Maximum Insight"
 categories:
   - Data Exploration
   - Botany
