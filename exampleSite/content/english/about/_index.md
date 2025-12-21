@@ -90,7 +90,6 @@ Architecture, pipeline, or dashboard design while your internal team handles imp
 Review and improvement of existing data infrastructure, analytics, and reporting.
 
 {{< /split-section >}}
-
 ---
 
 {{< split-section image="/images/polotno.png" alt="Portrait" imagePosition="left" >}}
