@@ -1,5 +1,7 @@
+{{- $images := split (.Get "images") "," -}}
+
 <div class="my-20 grid grid-cols-5 gap-2">
-  {{ range .Params.images }}
+  {{ range $images }}
     <div class="aspect-[3/5] overflow-hidden">
       <img
         src="{{ . }}"
