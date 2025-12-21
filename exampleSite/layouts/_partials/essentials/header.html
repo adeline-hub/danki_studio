@@ -56,7 +56,7 @@
       {{ range site.Menus.main }}
         <li>
           <a href="{{ .URL | relLangURL }}" class="block hover:text-indigo-600 transition-colors">
-            {{ .Name }}
+            {{ .Name | safeHTML }}
           </a>
         </li>
       {{ end }}

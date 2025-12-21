@@ -12,7 +12,7 @@ url = "/about/"
 weight = 2
 
 [[main]]
-name = "<img src='/images/logonavhome.png' class='h-6 inline'>"
+name = "<img src='/images/logonavhome.png' class='h-6 inline' alt='Home'>"
 url = "/"
 weight = 3
 
