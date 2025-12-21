@@ -1,0 +1,21 @@
+<section class="my-24 grid items-center gap-12 md:grid-cols-2 {{ if eq (.Get "imagePosition") "right" }}md:flex-row-reverse{{ end }}">
+
+  <!-- Image -->
+  <div class="w-full">
+    <img
+      src='{{ .Get "image" }}'
+      alt='{{ .Get "alt" }}'
+      class="w-full rounded-lg"
+      loading="lazy"
+    >
+    {{ with .Get "caption" }}
+      <p class="mt-2 text-xs text-gray-500">{{ . }}</p>
+    {{ end }}
+  </div>
+
+  <!-- Text -->
+  <div class="prose prose-lg dark:prose-invert">
+    {{ .Inner }}
+  </div>
+
+</section>

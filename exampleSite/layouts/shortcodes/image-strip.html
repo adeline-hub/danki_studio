@@ -1,0 +1,11 @@
+<div class="my-20 grid grid-cols-5 gap-2">
+  {{ range .Params.images }}
+    <div class="aspect-[3/5] overflow-hidden">
+      <img
+        src="{{ . }}"
+        class="h-full w-full object-cover"
+        loading="lazy"
+      >
+    </div>
+  {{ end }}
+</div>

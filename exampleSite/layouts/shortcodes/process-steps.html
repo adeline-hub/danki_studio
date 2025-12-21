@@ -1,0 +1,19 @@
+<section class="my-28">
+  <h2 class="mb-16 text-3xl font-semibold">The Data Process</h2>
+
+  <div class="grid gap-8 md:grid-cols-3">
+    {{ .Inner }}
+  </div>
+</section>
+
+<div class="border-l-4 border-[#33FFA2] pl-6">
+  <div class="text-4xl font-bold text-[#33FFA2] mb-4">
+    {{ .Get "number" }}
+  </div>
+  <h3 class="mb-2 text-xl font-semibold">
+    {{ .Get "title" }}
+  </h3>
+  <p class="text-gray-700 dark:text-gray-300">
+    {{ .Inner }}
+  </p>
+</div>
