@@ -1,0 +1,12 @@
+<div class="mt-8">
+  <a
+    href="{{ .Get "link" }}"
+    class="inline-block bg-black text-white px-6 py-3 text-sm font-semibold
+           hover:bg-gray-800 transition"
+  >
+    {{ .Get "text" }}
+  </a>
+  {{ with .Get "note" }}
+    <p class="mt-2 text-xs text-gray-500">{{ . }}</p>
+  {{ end }}
+</div>

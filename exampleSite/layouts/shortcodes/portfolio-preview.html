@@ -1,0 +1,26 @@
+<section class="my-24">
+  <h2 class="mb-8 text-2xl font-semibold text-center">
+    Selected Work
+  </h2>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+    {{ range first 8 (where site.RegularPages "Section" "portfolio") }}
+      {{ with .Params.cover }}
+        <a href="{{ .RelPermalink }}" class="block">
+          <img
+            src="{{ . }}"
+            alt="{{ $.Title }}"
+            class="aspect-square w-full object-cover"
+            loading="lazy"
+          >
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+
+  <div class="mt-6 text-center">
+    <a href="/portfolio" class="underline text-sm">
+      View full portfolio →
+    </a>
+  </div>
+</section>
