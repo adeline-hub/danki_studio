@@ -1,0 +1,73 @@
+<!-- DNS preconnect -->
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
+<!-- Google Fonts dynamiques -->
+{{ $pf := site.Data.theme.fonts.font_family.primary }}
+{{ $sf := site.Data.theme.fonts.font_family.secondary }}
+<script>
+  (function () {
+    const googleFont = document.createElement("link");
+    googleFont.href = "https://fonts.googleapis.com/css2?family={{$pf | safeURL}}{{with $sf}}&family={{. | safeURL}}{{end}}&display=swap";
+    googleFont.type = "text/css";
+    googleFont.rel = "stylesheet";
+    document.head.appendChild(googleFont);
+  })();
+</script>
+
+<!-- CSS principal -->
+{{ $styles := slice }}
+{{ $stylesLazy := slice }}
+
+{{ range site.Params.plugins.css }}
+  {{ if findRE "^http" .link }}
+    <link
+      crossorigin="anonymous"
+      media="all"
+      rel="stylesheet"
+      href="{{ .link | relURL }}"
+      {{ .attributes | safeHTMLAttr }} />
+  {{ else }}
+    {{ if not .lazy }}
+      {{ $styles = $styles | append (resources.Get .link) }}
+    {{ else }}
+      {{ $stylesLazy = $stylesLazy | append (resources.Get .link) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<!-- main.css compilé avec Tailwind -->
+{{ $mainCSS := resources.Get "css/main.css" }}
+{{ $tailwindOpts := dict "inlineImports" true }}
+{{ $tailwindCSS := $mainCSS | css.TailwindCSS $tailwindOpts }}
+{{ $styles = $styles | append $tailwindCSS }}
+
+<!-- generated-theme.css injecté -->
+{{ $themeCSS := resources.Get "css/generated-theme.css" }}
+{{ $styles = $styles | append $themeCSS }}
+
+<!-- Concaténation finale -->
+{{ $styles = $styles | resources.Concat "css/style.css" }}
+{{ $stylesLazy = $stylesLazy | resources.Concat "css/style-lazy.css" }}
+
+<!-- Production fingerprint -->
+{{ if hugo.IsProduction }}
+  {{ $styles = $styles | fingerprint }}
+  {{ $stylesLazy = $stylesLazy | minify | fingerprint }}
+{{ end }}
+
+<!-- Lien CSS principal -->
+<link
+  href="{{ $styles.RelPermalink }}"
+  integrity="{{ $styles.Data.Integrity }}"
+  rel="stylesheet" />
+
+<!-- Lien CSS lazy -->
+<link
+  rel="stylesheet"
+  href="{{ $stylesLazy.RelPermalink }}"
+  integrity="{{ $stylesLazy.Data.Integrity }}"
+  media="print"
+  onload="this.media='all'; this.onload=null;" />
