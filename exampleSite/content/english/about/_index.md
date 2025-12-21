@@ -59,15 +59,15 @@ This mindset — **Maximum Insight, Minimalist Data Architecture** — guides ev
 {{< process-steps >}}
 
 {{< process-step number="1" title="Understand Data + Goals" >}}
-We analyze your data — structure, volume, sources, and quality — while clarifying the business questions you want to answer. This ensures every solution is grounded in real objectives.
+We analyze your data — structure, volume, sources, and quality — while clarifying the business questions you want to answer.
 {{< /process-step >}}
 
 {{< process-step number="2" title="Design + Strategy" >}}
-We define a tailored strategy covering modeling, pipelines, and visualization. Concepts are shared early and refined collaboratively.
+We define a tailored strategy covering modeling, pipelines, and visualization.
 {{< /process-step >}}
 
 {{< process-step number="3" title="Build + Iterate" >}}
-We implement pipelines, dashboards, and analytics systems, iterating through feedback until the solution fully supports your team.
+We implement pipelines, dashboards, and analytics systems, iterating through feedback.
 {{< /process-step >}}
 
 {{< /process-steps >}}
@@ -78,18 +78,17 @@ We implement pipelines, dashboards, and analytics systems, iterating through fee
 
 ## Project Options
 
-We adapt our engagement to your needs:
-
 **The Full Process — End‑to‑End Data Solution**  
-Complete ownership from integration to dashboards, delivered through an iterative and transparent process.
+Complete ownership from integration to dashboards, delivered through an iterative process.
 
 **Focused Design — Strategic Support**  
 Architecture, pipeline, or dashboard design while your internal team handles implementation.
 
 **Consulting & Advice — Optimize Existing Systems**  
-Review and improvement of existing data infrastructure, analytics, and reporting.
+Review and improvement of existing data infrastructure and analytics.
 
 {{< /split-section >}}
+
 ---
 
 {{< split-section image="/images/polotno.png" alt="Portrait" imagePosition="left" >}}
@@ -98,4 +97,23 @@ Review and improvement of existing data infrastructure, analytics, and reporting
 
 My name is **Nambona‑Adeline**, botanist by training and founder of **Danki Studio**.
 
-With a background in botany and data analysis, I bring a scientific and systems‑oriented perspective to data strategy, architecture, and visualization. My work blends rigorous analysis with thoughtful design to make complex systems understandable and<span class="ml-2" /><span class="inline-block w-3 h-3 rounded-full bg-neutral-a12 align-middle mb-[0.1rem]" />
+With a background in botany and data analysis, I bring a scientific and systems‑oriented perspective to data strategy, architecture, and visualization.
+
+When I’m not building data solutions, I enjoy exploring nature, studying plants, hiking, and creative research.
+
+{{< /split-section >}}
+
+---
+
+## Selected Recognition
+
+- Recognition for design work in the **2025 WEB Du Bois Challenge**
+- Featured projects in industry blogs and publications
+- Collaborations with data‑driven organizations
+
+---
+
+## Get in Touch
+
+📧 **hello@danki.fr**  
+🌐 https://dankistudio.netlify.app
