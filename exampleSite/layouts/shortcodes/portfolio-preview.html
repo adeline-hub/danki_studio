@@ -5,11 +5,12 @@
 
   <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
     {{ range first 8 (where site.RegularPages "Section" "portfolio") }}
+      {{ $page := . }}
       {{ with .Params.cover }}
-        <a href="{{ .RelPermalink }}" class="block">
+        <a href="{{ $page.RelPermalink }}" class="block">
           <img
             src="{{ . }}"
-            alt="{{ $.Title }}"
+            alt="{{ $page.Title }}"
             class="aspect-square w-full object-cover"
             loading="lazy"
           >
