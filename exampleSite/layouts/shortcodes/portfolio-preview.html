@@ -3,24 +3,34 @@
     Selected Work
   </h2>
 
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+  <div class="grid grid-cols-2 gap-2 md:grid-cols-4">
+
     {{ range first 8 (where site.RegularPages "Section" "portfolio") }}
       {{ $page := . }}
-      {{ with .Params.cover }}
-        <a href="{{ $page.RelPermalink }}" class="block">
-          <img
-            src="{{ . }}"
-            alt="{{ $page.Title }}"
-            class="aspect-square w-full object-cover"
-            loading="lazy"
-          >
-        </a>
+
+      {{ with $page.Params.cover }}
+        {{ $img := $page.Resources.GetMatch . }}
+        {{ if $img }}
+          <a href="{{ $page.RelPermalink }}" class="block">
+            <img
+              src="{{ $img.RelPermalink }}"
+              alt="{{ $page.Title }}"
+              class="aspect-square w-full object-cover"
+              loading="lazy"
+              decoding="async"
+            >
+          </a>
+        {{ else }}
+          <!-- DEBUG: cover not found for {{ $page.File.Path }} -->
+        {{ end }}
       {{ end }}
+
     {{ end }}
+
   </div>
 
   <div class="mt-6 text-center">
-    <a href="/portfolio" class="underline text-sm">
+    <a href="{{ "/portfolio" | relURL }}" class="text-sm underline">
       View full portfolio →
     </a>
   </div>

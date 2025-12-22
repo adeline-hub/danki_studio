@@ -5,6 +5,8 @@ description: "Lean, agile, and actionable data architecture, analytics, and visu
 draft: false
 ---
 
+{{< hero image="/images/base.png" alt="Data visualization illustration" >}}
+
 ## Maximum Insight. Minimalist Data Architecture
 
 At **Danki Studio**, we design lean, agile, and expressive data systems that turn
@@ -19,6 +21,9 @@ black‑box solutions.
   link="/contact"
   note="Request a free data visualization or data architecture review"
 >}}
+
+
+{{< /hero >}}
 
 ---
 
@@ -43,7 +48,7 @@ clear, scalable, and purpose‑driven.
 
 ---
 
-{{< split-section image="/images/datify-gums-pops.png" imagePosition="right" >}}
+{{< split-section image="/images/base.png" imagePosition="right" >}}
 
 ## Datify Gums pOps  
 ### International Trade, Gums & Data
