@@ -1,53 +1,77 @@
 ---
-# Banner
-banner:
-  title: "The Ultimate Starter Template You Need To Start Your Hugo Project"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
-  image: "/images/banner.png"
-  button:
-    enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/hugoplate"
-
-# Features
-features:
-  - title: "What's Included in Hugoplate"
-    image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
-    bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
-    button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
-
-  - title: "Discover the Key Features Of Hugo"
-    image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
-    button:
-      enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/hugoplate"
-
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
-    image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
-    bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
-    button:
-      enable: false
-      label: ""
-      link: ""
+title: "Danki Studio — Maximale helderheid. Minimalistische data‑architectuur"
+meta_title: "Danki Studio"
+description: "Slanke, wendbare en actiegerichte data‑architectuur, analytics en visualisatie."
+draft: false
 ---
+
+{{< hero image="/images/base.png" alt="Illustratie van datavisualisatie" >}}
+
+## Maximale helderheid. Minimalistische data‑architectuur
+
+Bij **Danki Studio** ontwerpen we slanke, wendbare en expressieve datasystemen die
+complexe informatie omzetten in **helderheid, inzicht en actie**.
+
+Van data‑architectuur tot analytics en visualisatie helpen we organisaties hun
+data te begrijpen — zonder onnodige complexiteit, opgeblazen tools of
+black‑boxoplossingen.
+
+{{< /hero >}}
+
+{{< cta-button
+  text="Gratis starten"
+  link="/contact"
+  note="Vraag een gratis beoordeling van datavisualisatie of data‑architectuur aan"
+>}}
+
+
+
+
+---
+
+{{< portfolio-preview >}}
+
+---
+
+## Waar ik werk
+
+Ik werk samen met teams en organisaties in domeinen waar dataduidelijkheid,
+betrouwbaarheid en betekenis echt van belang zijn:
+
+- **Klimaat‑ en milieusystemen**
+- **Internationale handel en economie**
+- **Stedelijke infrastructuur en mobiliteit**
+- **Onderzoek en academische wereld**
+- **Publiek beleid en instellingen**
+- **Product‑ en bedrijfsanalytics**
+
+In al deze sectoren blijft mijn focus hetzelfde: het ontwerpen van datasystemen
+die helder, schaalbaar en doelgericht zijn.
+
+---
+
+{{< split-section image="/images/base.png" imagePosition="right" >}}
+
+## Datify Gums pOps  
+### Internationale handel, harsen en data
+
+*Datify Gums pOps* is een data‑gedreven verkenning van de wereldwijde handel in
+harsen, waarin internationale handelsstatistieken, botanische kennis en visuele
+verhalen samenkomen.
+
+Het project zet ruwe handelsstromen om in intuïtieve visuele narratieven en
+onthult patronen van productie, beweging, waarde en afhankelijkheid tussen regio’s
+en markten.
+
+Op het snijvlak van **economie, botanie en datavisualisatie** laat dit werk zien
+hoe zorgvuldig ontworpen datasystemen complexe mondiale dynamieken begrijpelijk
+en bruikbaar kunnen maken.
+
+[Ontdek het project →](/book)
+
+{{< /split-section >}}
+
+---
+
+{{< newsletter-cta >}}
+

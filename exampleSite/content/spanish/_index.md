@@ -1,53 +1,76 @@
 ---
-# Banner
-banner:
-  title: "The Ultimate Starter Template You Need To Start Your Hugo Project"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
-  image: "/images/banner.png"
-  button:
-    enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/hugoplate"
-
-# Features
-features:
-  - title: "What's Included in Hugoplate"
-    image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
-    bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
-    button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
-
-  - title: "Discover the Key Features Of Hugo"
-    image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
-    button:
-      enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/hugoplate"
-
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
-    image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
-    bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
-    button:
-      enable: false
-      label: ""
-      link: ""
+title: "Danki Studio — Máxima claridad. Arquitectura de datos minimalista"
+meta_title: "Danki Studio"
+description: "Arquitectura de datos, analítica y visualización ágiles, ligeras y orientadas a la acción."
+draft: false
 ---
+
+{{< hero image="/images/base.png" alt="Ilustración de visualización de datos" >}}
+
+## Máxima claridad. Arquitectura de datos minimalista
+
+En **Danki Studio** diseñamos sistemas de datos ligeros, ágiles y expresivos, capaces
+de transformar información compleja en **claridad, comprensión y acción**.
+
+Desde la arquitectura de datos hasta la analítica y la visualización, ayudamos a
+las organizaciones a dar sentido a sus datos — sin complejidad innecesaria,
+herramientas sobredimensionadas ni soluciones de caja negra.
+
+{{< /hero >}}
+
+{{< cta-button
+  text="Empieza gratis"
+  link="/contact"
+  note="Solicita una revisión gratuita de visualización o arquitectura de datos"
+>}}
+
+
+
+
+---
+
+{{< portfolio-preview >}}
+
+---
+
+## Dónde trabajo
+
+Colaboro con equipos y organizaciones que operan en ámbitos donde la claridad, la
+fiabilidad y el significado de los datos son fundamentales:
+
+- **Sistemas climáticos y medioambientales**
+- **Comercio internacional y economía**
+- **Infraestructura urbana y movilidad**
+- **Investigación y ámbito académico**
+- **Políticas públicas e instituciones**
+- **Analítica de producto y de negocio**
+
+En todos estos sectores, mi enfoque es el mismo: diseñar sistemas de datos claros,
+escalables y guiados por un propósito.
+
+---
+
+{{< split-section image="/images/base.png" imagePosition="right" >}}
+
+## Datify Gums pOps  
+### Comercio internacional, gomas y datos
+
+*Datify Gums pOps* es una exploración basada en datos del comercio global de las
+gomas, que combina estadísticas de comercio internacional, conocimiento botánico y
+narrativa visual.
+
+El proyecto transforma flujos comerciales en bruto en relatos visuales intuitivos,
+revelando patrones de producción, circulación, valor y dependencia entre regiones
+y mercados.
+
+En la intersección entre **economía, botánica y visualización de datos**, este
+trabajo demuestra cómo sistemas de datos cuidadosamente diseñados pueden hacer
+comprensibles y accionables dinámicas globales complejas.
+
+[Descubrir el proyecto →](/book)
+
+{{< /split-section >}}
+
+---
+
+{{< newsletter-cta >}}
