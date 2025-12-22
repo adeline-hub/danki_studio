@@ -16,6 +16,8 @@ From data architecture to analytics and visualization, we help organizations
 make sense of their data — without unnecessary complexity, bloated tools, or
 black‑box solutions.
 
+{{< /hero >}}
+
 {{< cta-button
   text="Get Started for Free"
   link="/contact"
@@ -23,7 +25,7 @@ black‑box solutions.
 >}}
 
 
-{{< /hero >}}
+
 
 ---
 
