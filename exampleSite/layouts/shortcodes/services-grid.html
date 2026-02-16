@@ -1,0 +1,12 @@
+<!-- Services Grid - Slide Queen Style -->
+<section class="section bg-primary text-white py-16">
+  <div class="container">
+    <h2 class="text-center text-4xl font-bold mb-4">{{ .Get "title" | default "Services" }}</h2>
+    <p class="text-center text-xl mb-12 max-w-3xl mx-auto">
+      {{ .Get "subtitle" }}
+    </p>
+    <div class="row g-4 justify-center">
+      {{ .Inner }}
+    </div>
+  </div>
+</section>

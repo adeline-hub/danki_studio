@@ -1,0 +1,26 @@
+<!-- Hello Section - Slide Queen Style -->
+<section class="section bg-gradient-to-b from-white to-gray-50">
+  <div class="container">
+    <div class="row items-center gx-5 gy-4">
+      <!-- Text Column -->
+      <div class="lg:col-6 md:col-7">
+        <h2 class="text-4xl font-bold text-primary mb-2">{{ .Get "greeting" | default "Hello!" }}</h2>
+        <h3 class="text-2xl font-medium text-dark mb-4">{{ .Get "subtitle" }}</h3>
+        <p class="text-lg text-gray-600 mb-6">
+          {{ .Inner }}
+        </p>
+        {{ if .Get "button_text" }}
+        <a href="{{ .Get "button_link" }}" class="btn btn-primary">
+          {{ .Get "button_text" }}
+        </a>
+        {{ end }}
+      </div>
+      <!-- Image Column -->
+      <div class="lg:col-6 md:col-5">
+        {{ if .Get "image" }}
+        <img src="{{ .Get "image" }}" alt="{{ .Get "alt" | default "Portrait" }}" class="rounded-xl shadow-lg w-full" />
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

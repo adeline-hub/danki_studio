@@ -1,0 +1,41 @@
+<!-- Single Service Card -->
+<div style="flex: 0 0 300px; max-width: 320px; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 1rem;">
+  
+  <!-- Round Image -->
+  {{ if .Get "image" }}
+  <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin-bottom: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 4px solid white;">
+    <img 
+      src="{{ .Get "image" }}" 
+      alt="{{ .Get "title" }}" 
+      style="width: 100%; height: 100%; object-fit: cover;"
+    />
+  </div>
+  {{ else }}
+  <!-- Placeholder circle if no image -->
+  <div style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 4px solid white; background-color: #e8e0d0; display: flex; align-items: center; justify-content: center;">
+    <span style="font-size: 3rem; color: #c4a574;">{{ .Get "icon" | default "◆" }}</span>
+  </div>
+  {{ end }}
+  
+  <!-- Title -->
+  <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 1rem;">
+    <span style="color: #333;">{{ .Get "prefix" }}</span><span style="color: #c4a574;">{{ .Get "highlight" }}</span>
+  </h3>
+  
+  <!-- Description -->
+  <p style="color: #666; margin-bottom: 1.5rem; line-height: 1.6;">
+    {{ .Inner }}
+  </p>
+  
+  <!-- Button -->
+  {{ if .Get "link" }}
+  <a 
+    href="{{ .Get "link" }}" 
+    style="display: inline-block; padding: 0.5rem 1.5rem; border: 2px solid #c4a574; border-radius: 50px; color: #c4a574; font-weight: 600; text-decoration: none; transition: all 0.3s ease;"
+    onmouseover="this.style.backgroundColor='#c4a574'; this.style.color='white';"
+    onmouseout="this.style.backgroundColor='transparent'; this.style.color='#c4a574';"
+  >
+    {{ .Get "button_text" | default "Learn more" }}
+  </a>
+  {{ end }}
+</div>
