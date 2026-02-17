@@ -7,7 +7,7 @@ draft: false
 
 {{< hero-carousel >}}
 
-{{< carousel-slide title="Data Boss" subtitle="Design lean data systems in one day with expert guidance" description="Workshop available online and in-person" button_text="Become a Data Boss" button_link="/workshop" image="/images/base.png" >}}
+{{< carousel-slide title="Data Boss" subtitle="Design lean data systems in one day with expert guidance" description="Workshop available online and in-person" button_text="Become a Data Boss" button_link="services/data-coach" image="/images/base.png" >}}
 
 {{< carousel-slide 
     title="Hello!" 
@@ -19,7 +19,7 @@ draft: false
     image_size="xl"
 >}}
 
-{{< carousel-slide title="Data Mentor" subtitle="The online consultation to transform your messy data into a strategic asset" description="The right solution if your data infrastructure does not convince stakeholders." button_text="Go to Data Mentor" button_link="/consultation" image="/images/data-mentor.png" >}}
+{{< carousel-slide title="Data Mentor" subtitle="The online consultation to transform your messy data into a strategic asset" description="The right solution if your data infrastructure does not convince stakeholders." button_text="Go to Data Mentor" button_link="services/data-coach" image="/images/data-mentor.png" >}}
 
 {{< /hero-carousel >}}
 

@@ -1,0 +1,206 @@
+<!-- HERO: Architecture with Purpose -->
+<section class="py-24 bg-[#1a1a1a] text-white relative overflow-hidden">
+  <!-- Tech Grid Background -->
+  <div class="absolute inset-0 opacity-10" 
+       style="background-image: radial-gradient(#33FFA2 1px, transparent 1px); background-size: 30px 30px;">
+  </div>
+  
+  <div class="container mx-auto px-6 max-w-5xl relative z-10 text-center">
+    <span class="inline-block border border-[#33FFA2] text-[#33FFA2] px-4 py-1 rounded-full text-xs font-bold tracking-widest mb-6">
+      DATA ARCHITECTURE & ENGINEERING
+    </span>
+    
+    <h1 class="text-5xl md:text-6xl font-bold mb-8 leading-tight text-[#33FFA2]">
+      Data Build.
+      <span class="block text-gray-400 text-3xl md:text-4xl mt-2 font-normal">
+        Pipelines that flow, not clog.
+      </span>
+    </h1>
+
+    <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-10">
+      We design Green IT architectures. We integrate, model, and optimize your data flows using modern stacks (Snowflake, dbt, SQL) to ensure your infrastructure is scalable, documented, and cost-efficient.
+    </p>
+
+    <!-- Tech Stack Mini-Bar -->
+    <div class="flex justify-center gap-6 opacity-60 grayscale hover:grayscale-0 transition duration-500">
+      <span class="font-bold text-lg">Snowflake</span>
+      <span class="font-bold text-lg">dbt</span>
+      <span class="font-bold text-lg">Python</span>
+      <span class="font-bold text-lg">SQL</span>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: Core Engineering Services -->
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-6 max-w-6xl">
+    
+    <div class="grid md:grid-cols-3 gap-12 text-center md:text-left">
+      
+      <!-- Integration -->
+      <div class="group">
+        <div class="w-12 h-12 bg-[#f5f0e8] rounded-full flex items-center justify-center text-[#c4a574] text-2xl mb-4 group-hover:bg-[#33FFA2] group-hover:text-black transition">
+          🔗
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Robust Integration</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Stop manual CSV exports. We build automated connectors (API, Webhooks, ETL) to feed your warehouse in real-time. We use the <strong>Medallion Architecture</strong> (Bronze/Silver/Gold) to ensure traceability.
+        </p>
+      </div>
+
+      <!-- Modeling -->
+      <div class="group">
+        <div class="w-12 h-12 bg-[#f5f0e8] rounded-full flex items-center justify-center text-[#c4a574] text-2xl mb-4 group-hover:bg-[#33FFA2] group-hover:text-black transition">
+          📐
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Dimensional Modeling</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          We structure your data for humans, not machines. Using <strong>Kimball methodology</strong> (Star Schemas), we turn messy logs into clear "Fact" and "Dimension" tables ready for BI.
+        </p>
+      </div>
+
+      <!-- Optimization -->
+      <div class="group">
+        <div class="w-12 h-12 bg-[#f5f0e8] rounded-full flex items-center justify-center text-[#c4a574] text-2xl mb-4 group-hover:bg-[#33FFA2] group-hover:text-black transition">
+          ⚡
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Green Optimization</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Slow queries cost money and carbon. We optimize SQL, refactor messy dbt models, and implement caching strategies to reduce your Snowflake bill and latency.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: The "Fun" Example (Rationalization) -->
+<section class="py-20 bg-[#f5f0e8] border-y border-gray-200">
+  <div class="container mx-auto px-6 max-w-5xl">
+    
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <!-- Image Side -->
+      <div class="w-full md:w-1/2">
+        <div class="bg-white p-2 rounded-xl shadow-lg rotate-2 hover:rotate-0 transition duration-500">
+          <!-- Placeholder for your "Fun" image -->
+          <img src="/images/danki_helix.png" alt="The Spaghetti vs. The Line" class="rounded-lg w-full h-auto">
+        </div>
+      </div>
+
+      <!-- Text Side -->
+      <div class="w-full md:w-1/2">
+        <span class="text-[#c4a574] font-bold text-xs tracking-widest uppercase">Rationalization Case Study</span>
+        <h2 class="text-3xl font-bold text-gray-900 mt-2 mb-4">
+          The "Rube Goldberg" Cleanup.
+        </h2>
+        <p class="text-gray-600 mb-6">
+          <strong>The Problem:</strong> A client had a pipeline that looked like a cartoon machine: An Excel file emailed to a manager, who uploaded it to Drive, picked up by a Zapier script, dumped into Sheets, and read by Looker. It broke every Tuesday.
+        </p>
+        <p class="text-gray-600 mb-6">
+          <strong>The Danki Fix:</strong> We deleted the middle-men.
+          <br>
+          <span class="font-mono text-sm bg-gray-200 px-2 py-1 rounded">API Source &rarr; Python Script (Render) &rarr; SQL Database &rarr; BI Dashboard.</span>
+        </p>
+        <div class="bg-white p-4 rounded-lg border-l-4 border-[#33FFA2]">
+          <p class="text-sm font-bold text-gray-900">Result:</p>
+          <p class="text-xs text-gray-600">Zero manual touchpoints. Real-time data. 99.9% Uptime.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION 4: Technical Projects (Snowflake / dbt / SQL) -->
+<section class="py-24 bg-white">
+  <div class="container mx-auto px-6 max-w-6xl">
+    
+    <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+      Engineering Portfolio
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Project 1: Snowflake Optimization -->
+      <a href="#" class="group block border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition">
+        <div class="bg-blue-50 h-48 flex items-center justify-center relative overflow-hidden">
+          <img src="/images/danki_helix.png" alt="Snowflake Optimization" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-500">
+          <div class="absolute bottom-4 left-4 bg-white px-3 py-1 rounded text-xs font-bold text-blue-600">SNOWFLAKE</div>
+        </div>
+        <div class="p-8">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Cloud Cost Killer</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Audited a client's Snowflake instance. Identified inefficient queries and unused tables ("Data Zombies").
+          </p>
+          <ul class="text-sm text-gray-500 space-y-2">
+            <li>✅ Reduced credit consumption by 35%</li>
+            <li>✅ Implemented auto-suspend policies</li>
+            <li>✅ Archived 2TB of cold data</li>
+          </ul>
+        </div>
+      </a>
+
+      <!-- Project 2: dbt Modernization -->
+      <a href="#" class="group block border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition">
+        <div class="bg-orange-50 h-48 flex items-center justify-center relative overflow-hidden">
+          <img src="/images/danki_helix.png" alt="dbt Transformation" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-500">
+          <div class="absolute bottom-4 left-4 bg-white px-3 py-1 rounded text-xs font-bold text-orange-600">DBT (Data Build Tool)</div>
+        </div>
+        <div class="p-8">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">The Modular Pipeline</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Refactored 400+ loose SQL scripts into a clean, version-controlled dbt project with documentation.
+          </p>
+          <ul class="text-sm text-gray-500 space-y-2">
+            <li>✅ Auto-generated Data Lineage</li>
+            <li>✅ Built-in Data Quality Tests</li>
+            <li>✅ CI/CD for Data Deployment</li>
+          </ul>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: The "Hidden" Work (BI, Veille, Docs) -->
+<section class="py-20 bg-[#1a1a1a] text-white">
+  <div class="container mx-auto px-6 max-w-4xl text-center">
+    
+    <h2 class="text-2xl font-bold mb-10 text-[#33FFA2]">The Ecosystem</h2>
+    
+    <div class="grid md:grid-cols-3 gap-8 text-left">
+      <!-- BI -->
+      <div class="p-6 border border-gray-700 rounded-xl hover:border-[#33FFA2] transition">
+        <h3 class="text-[#33FFA2] font-bold mb-2">Business Intelligence</h3>
+        <p class="text-sm text-gray-400">
+          Architecture is useless if the dashboard is ugly. We ensure your SQL models feed perfectly into <strong>PowerBI, Tableau, or Metabase</strong>.
+        </p>
+      </div>
+      
+      <!-- Veille -->
+      <div class="p-6 border border-gray-700 rounded-xl hover:border-[#33FFA2] transition">
+        <h3 class="text-[#33FFA2] font-bold mb-2">Tech Watch</h3>
+        <p class="text-sm text-gray-400">
+          The stack changes fast. We continuously monitor the Modern Data Stack to keep your architecture future-proof, not trendy.
+        </p>
+      </div>
+
+      <!-- Docs -->
+      <div class="p-6 border border-gray-700 rounded-xl hover:border-[#33FFA2] transition">
+        <h3 class="text-[#33FFA2] font-bold mb-2">Documentation</h3>
+        <p class="text-sm text-gray-400">
+          We treat data like software. Every table has a description. Every pipeline has a README. No "Black Box" engineering.
+        </p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-16">
+      <a href="mailto:hello@dankistudio.com?subject=Architecture Audit" class="bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-[#33FFA2] transition">
+        Audit My Architecture
+      </a>
+    </div>
+
+  </div>
+</section>
